@@ -24,7 +24,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
   publisher =     {INFORMS Journal on Computing},
   title =         { Ranking decomposition for the discrete ordered median problem },
   year =          {2024},
-  doi =           {10.1287/ijoc.2022.0334.cd},
+  doi =           {10.1287/ijoc.2023.0059.cd},
   url =           {https://github.com/INFORMSJoC/2023.0059},
 }
 ```
