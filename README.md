@@ -42,10 +42,9 @@ The main folders are 'data', 'results', 'src' and 'test'.
 
 ## Installation
 
-To install this Julia package, simply execute from a Julia REPL:
+To install this Julia package, simply execute from a Julia Pkg REPL (by pressing `]` within a regular Julia REPL) the following:
 ```julia
-julia> using Pkg
-julia> Pkg.add(https://github.com/INFORMSJoC/2023.0059)
+(@v1.10) pkg> add https://github.com/INFORMSJoC/2023.0059
 ```
 
 ## Testing
@@ -75,4 +74,4 @@ julia> res = DiscreteOrderedMedian.bnb(data, params)
 
 ## Results
 
-The [results](results) folder show detailed results for the aggregate data reported in the paper.
+The [results](results) folder provides detailed results for the aggregate data reported in the paper.
