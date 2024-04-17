@@ -2,7 +2,7 @@ MIT License
 
 Copyright (c) 2024 Marilène Cherkesly
 Copyright (c) 2024 Claudio Contardo
-Copyright (c) 2024 Mattieu Gruson
+Copyright (c) 2024 Matthieu Gruson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
