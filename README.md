@@ -5,7 +5,7 @@
 This archive is distributed in association with the [INFORMS Journal on
 Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper Ranking decomposition for the discrete ordered median problem by M. Cherkesly, C. Contardo, and M. Gruson.
+The software and data in this repository are a snapshot of the software and data that were used in the research reported in the paper Ranking decomposition for the discrete ordered median problem by M. Cherkesly, C. Contardo, and M. Gruson. The upstream repository (including a potentially more up-to-date version of this code) can be found at https://github.com/claud10cv/DiscreteOrderedMedian.jl. This snapshot has been built from [this commit](https://github.com/claud10cv/DiscreteOrderedMedian.jl/commit/26775fbe2124b092416e392dfb4727f018135798)
 
 
 ## Cite
