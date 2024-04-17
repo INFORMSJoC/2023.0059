@@ -59,7 +59,7 @@ You can test this method by executing from a Julia Pkg REPL (by pressing `]` wit
 
 1. Create a random instance using the generator provided in our code (alternatively, we also provide file readers for the two sets of instances in the folder '[data](data)'):
 ```julia
-julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = seed)
+julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = 0)
 ```
 2. Optionally, you can modify the lambda vector, executing for instance
 ```julia
@@ -80,7 +80,7 @@ This package leaves the user the freedom to specify one of the the following thr
 ```julia
 julia> using DiscreteOrderedMedian
 julia> using CPLEX
-julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = seed)
+julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = 0)
 julia> params = DiscreteOrderedMedian.Parameters(true, true, true, true, 3600.0, cplex_optimizer_data(CPLEX.Optimizer))
 julia> res = bnb(data, params)
 ```
