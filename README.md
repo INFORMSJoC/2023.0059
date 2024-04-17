@@ -56,6 +56,7 @@ You can test this method by executing from a Julia Pkg REPL (by pressing `]` wit
 ```
 
 ## Basic Usage
+
 1. Create a random instance using the generator provided in our code (alternatively, we also provide file readers for the two sets of instances in the folder '[data](data)'):
 ```julia
 julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = seed)
@@ -70,7 +71,18 @@ julia> params = default_parameters()
 ```
 4. Solve the problem instance using our method
 ```julia
-julia> res = DiscreteOrderedMedian.bnb(data, params)
+julia> res = bnb(data, params)
+```
+
+## Note on the choice of solver
+
+This package leaves the user the freedom to specify one of the the following three solvers for the solution of the MILPs: CPLEX, Gurobi, and GLPK. Our package includes GLPK as dependency and therefore uses it as default. In `optimizer.jl` you will find functions to be able to specify the other two solvers. To be able to reproduce the results in the manuscript, you need access to a license of CPLEX 22.1 (free for academics). The following workflow allows to run our method using CPLEX as underlying MILP solver:
+```julia
+julia> using DiscreteOrderedMedian
+julia> using CPLEX
+julia> data = generate_euclidean(10, 5, 1000, 1000, :pmedian; seed = seed)
+julia> params = DiscreteOrderedMedian.Parameters(true, true, true, true, 3600.0, cplex_optimizer_data(CPLEX.Optimizer))
+julia> res = bnb(data, params)
 ```
 
 ## Results
