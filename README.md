@@ -76,7 +76,7 @@ julia> res = bnb(data, params)
 
 ## Note on the choice of the MILP solver
 
-This package leaves the user the freedom to specify one of the the following four solvers for the solution of the MILPs: `CPLEX`, `Gurobi`, `HiGHS`, and `GLPK`. Our package includes `HiGHS` as dependency and therefore uses it as default. In `optimizer.jl` you will find functions to be able to specify the other three solvers. To be able to reproduce the results in the manuscript, you need access to a license of `CPLEX` v22.1 (free for academics). The following workflow allows to run our method using `CPLEX` as underlying MILP solver:
+This package leaves to the user the freedom to specify one of the the following four solvers for the solution of the MILPs: `CPLEX`, `Gurobi`, `HiGHS`, and `GLPK`. Our package includes `HiGHS` as a dependency and therefore uses it as the default MILP solver. In `optimizer.jl` you will find functions to be able to specify any of the other three solvers. To be able to reproduce the results in the manuscript, you will need access to a valid license of `CPLEX` v22.1 (free for academics). The following workflow will allow you to execute the method using `CPLEX` as the underlying MILP solver:
 ```julia
 julia> using DiscreteOrderedMedian
 julia> using CPLEX
